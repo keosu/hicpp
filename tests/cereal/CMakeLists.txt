@@ -3,8 +3,8 @@ include(FetchContent)
 FetchContent_Declare(cereal 
     URL https://github.com/USCiLab/cereal/archive/refs/tags/v1.3.2.tar.gz
 ) 
-
-message(STATUS ${cereal_SOURCE_DIR})
+# FetchContent_MakeAvailable(cereal)
+FetchContent_Populate(cereal)
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin) 
 
