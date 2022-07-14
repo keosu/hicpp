@@ -75,5 +75,6 @@
         "variant": "cpp",
         "cstdatomic": "cpp",
         "hashtable": "cpp"
-    }
+    },
+    "editor.tabSize": 2
 }

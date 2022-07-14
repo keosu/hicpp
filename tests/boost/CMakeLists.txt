@@ -2,10 +2,13 @@ find_package(Boost REQUIRED)
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin) 
 
+set(CXX_STANDARD c++17)
 if(Boost_FOUND)
     message(STATUS "=== boost found ===")
     include_directories(${Boost_INCLUDE_DIRS}) 
     add_executable(test_str "test_str.cpp") 
+    add_executable(test_pfr "test_pfr.cpp") 
+    add_executable(test_hana "test_hana.cpp") 
     target_link_libraries(test_str ${Boost_LIBRARIES})
 else()
     message(STATUS "[Warning] Boost Not found!!!")
