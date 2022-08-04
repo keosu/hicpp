@@ -1,4 +1,4 @@
-find_package(Boost REQUIRED) 
+find_package(Boost) 
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin) 
 
